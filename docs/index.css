@@ -1,0 +1,68 @@
+body {
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f37335,
+    #fdc830
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f37335,
+    #fdc830
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  float: left;
+  background-image: linear-gradient(135deg, #81fbb8 10%, #28c76f 100%);
+  margin-right: -1px;
+  margin-top: -1px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  height: 10vw;
+  padding: 0;
+  text-align: center;
+  width: 10vw;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  margin-top: 30px;
+  margin-left: 50px;
+  display: grid;
+
+  grid-template-columns: 70% 30%;
+}
+.game-board {
+  margin-top: 10vw;
+  margin-left: 20vw;
+}
+.game-info {
+  margin-top: 10vw;
+}
